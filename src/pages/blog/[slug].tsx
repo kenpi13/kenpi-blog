@@ -159,7 +159,7 @@ const RenderPost = ({ post, redirect, preview }) => {
           <div className="posted">Posted: {getDateStr(post.Date)}</div>
         )}
         {/* Tagの表示 */}
-        <span>{`Tags:+${post.Tag}`}</span>
+        <span>{`Tags:${post.Tag}`}</span>
         <hr />
 
         {(!post.content || post.content.length === 0) && (
